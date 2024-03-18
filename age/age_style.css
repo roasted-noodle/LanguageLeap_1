@@ -103,6 +103,14 @@
     height: 60px;
   }
 
+  .confirm_button:hover{
+    opacity: 90%;
+  }
+
+  .confirm_button:active{
+    opacity: 80%;
+  }
+
 
   .two_columns{
     display: flex;
@@ -116,3 +124,14 @@
   .right_aligned{
     margin-left: 5px;
   }
+
+  #back_button{
+    color:#a6662c;
+    background-color: #ffead7;
+    border: 0;
+  }
+
+  .back_button_placement{
+    display: inline-block;
+  }
+  
