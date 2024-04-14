@@ -11,18 +11,7 @@
     text-align: center;
     margin-bottom: 8px;
     font-weight: bold;
-    width: 400px;
-  }
-
-  .option_button:active {
-    background-color: #6386db;
-    color: white;
-    transition: background-color 0.15s, color 0.15s;
-  }
-
-  .option_button:focus{
-    background-color: #6386db;
-    color: white;
+    width: 450px;
   }
 
   .heading_site {
@@ -98,7 +87,6 @@
     line-height: 1.1;
     text-align: center;
     margin-bottom: 8px;
-    margin-top: 8px;
     font-weight: bold;
     width: 300px;
     height: 60px;
@@ -135,4 +123,14 @@
   .back_button_placement{
     display: inline-block;
   }
-  
+
+  .result
+  {
+    color: #a6662c;
+    font-family: nunito, sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+    font-weight: bold;
+  }

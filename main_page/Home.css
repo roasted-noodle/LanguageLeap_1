@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Kavoon&display=swap');
+
+header {
+    text-align: left;
+    color: #92c573;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+    background-color: #ffead7;
+}
+
+body {
+    background-color: #ffead7;
+}
+
+main {
+    color: blue;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fir_image {
+    padding-right: 20px;
+}
+
+.sec_image {
+    width: 125px;
+}
+
+span {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* background-color: peachpuff; */
+    padding: 0 20px;
+}
+
+.options_nav{
+    text-decoration: none;
+    margin: 0 15px;
+    cursor: pointer;
+    font-family: nunito, sans-serif; 
+    color: #a6662c;
+}
+
+.options_nav:hover{
+    text-shadow: 0.15px 0.15px #875424;
+    transition: all 0.25s;
+}
+
+.login-button,
+.signup-button {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+
+h1 {
+    margin: 0;
+    font-family: 'Happy Monkey', cursive;
+}
+
+h3 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+footer {
+    background-color: rgb(234, 161, 97);
+    padding: 10px 0;
+    text-align: center;
+    color: rgb(90, 45, 7)
+}
+
+.footer-item {
+    display: inline-block;
+    margin: 0 70px;
+    font-size: 16px;
+}
+
+.body-item {
+    display: inline-block;
+    height: 150px;
+    margin: 0 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    /* padding: 5px; */
+    background-color: white;
+    /* color: orangered; */
+}
+
+p {
+    padding: 15px;
+}
+
+hr {
+    background-color: #a6662c;
+    height: 1px;
+    border: 0;
+    margin: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    /* Align the button to the center */
+    margin-top: 20px;
+}
+
+.dropdown button {
+    background-color: #333;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 1000px;
+    height: 50px;
+
+}
+
+.dropdown-content {
+
+    width: 1000px;
+    height: 70px;
+    display: none;
+    background-color: white;
+
+    margin: 0;
+    padding: 0;
+}
+
+.syntax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .navbar {
+    
+} */
+
+.slide1{
+    /* margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%; */
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+
+body{
+    margin: 0;
+    font-family: nunito, sans-serif;
+    color: #a6662c;
+}
+
+.slide_text{
+    display: flex;
+    flex-direction: columns;
+}
+
+#slide1_text1{
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    margin-right: 250px;
+}
+
+
+#slide1_text2{
+    font-size: 20px;
+    padding: 0;
+    margin-right: 300px;
+}
+
+#slide1_text1 p{
+    margin: 0;
+    padding: 0;
+}
+
+#slide1_text2 p{
+    padding: 0;
+}
+
+.lang_choose{
+    background-color: #e8ceb6;
+    padding: 40px;
+    padding-bottom: 10px;
+}
+
+.feats{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    row-gap: 20px;
+}

@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - LanguageLeap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Kavoon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Quiz.css">
+    <style>
+      #next {
+          display: none;
+      }
+  </style>
+  <script>
+      function calculateScore() {
+      const correctAnswers = ["C", "A", "B", "A", "C"];
+      let score = 0;
+  
+      const answers = document.querySelectorAll('input[type="radio"]:checked');
+   
+      answers.forEach((answer, index) => {
+          if (answer.value === correctAnswers[index]) {
+              score++;
+          }
+      });
+  
+      document.getElementById("result").innerHTML = "Your score is: " + score + " out of 5";
+      document.getElementById("result").classList.add("result");
+      document.getElementById("next").style.display = "inline";
+  }
+  
+  </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="back_button_placement">
+      <button id="back_button">Back</button>
+    </div>
+
+    <div class="heading_container">
+      <div class="heading_site">
+        <h1>LanguageLeap</h1>
+      </div>
+    </div>
+    </div>
+    
+
+    <div class="hr"></div>
+    <br>
+    <div class="main_question">
+        <p> French Quiz </p>
+    </div>
+
+    <div class="options_mcq">
+      <div class="option_div">
+        <button class="option_button"> 
+         <div>
+          <label for="q1">1. Je _______ que le temps est beau aujourd'hui.</label><br><br>
+          <input type="radio" id="q1a" name="q1" value="A"> Pensent
+          <input type="radio" id="q1b" name="q1" value="B"> Penser
+          <input type="radio" id="q1c" name="q1" value="C"> Pense
+          <input type="radio" id="q1d" name="q1" value="D"> Penses
+      </div></button>
+    </div>
+    <div class="options_mcq">
+      <div class="option_div">
+        <button class="option_button"> 
+         <div>
+          <label for="q2">2. Il _____ un chien marron.</label><br><br>
+          <input type="radio" id="q2a" name="q2" value="A"> Choisit
+          <input type="radio" id="q2b" name="q2" value="B"> Choisis
+          <input type="radio" id="q2c" name="q2" value="C"> Choisissons<br>
+          <input type="radio" id="q2d" name="q2" value="D"> Choisissez
+      </div></button>
+    </div>
+    <div class="options_mcq">
+      <div class="option_div">
+        <button class="option_button"> 
+         <div>
+          <label for="q3">3. Nous _________ un camarade de chambre.</label><br><br>
+          <input type="radio" id="q3a" name="q3" value="A"> Cherche
+          <input type="radio" id="q3b" name="q3" value="B"> Cherchons
+          <input type="radio" id="q3c" name="q3" value="C"> Cherchez<br>
+          <input type="radio" id="q3d" name="q3" value="D"> Cherchent
+      </div></button>
+    </div>
+    <div class="options_mcq">
+      <div class="option_div">
+        <button class="option_button"> 
+         <div>
+          <label for="q4">4. Vous _______ un sandwich.</label><br><br>
+          <input type="radio" id="q4a" name="q4" value="A"> Mangez
+          <input type="radio" id="q4b" name="q4" value="B"> Mangeons
+          <input type="radio" id="q4c" name="q4" value="C"> Mangent
+          <input type="radio" id="q4d" name="q4" value="D"> Mange
+      </div></button>
+    </div>
+    <div class="options_mcq">
+      <div class="option_div">
+        <button class="option_button"> 
+         <div>
+          <label for="q5">5. Ils ______ dans le parc.</label><br><br>
+          <input type="radio" id="q5a" name="q5" value="A"> Promene
+          <input type="radio" id="q5b" name="q5" value="B"> Promenes
+          <input type="radio" id="q5c" name="q5" value="C"> Promènent<br>
+          <input type="radio" id="q5d" name="q5" value="D"> Promenons
+      </div></button>
+    </div>
+    <div class="option_div">
+      <button class="confirm_button" onclick="calculateScore()"> Submit </button>
+    </div>
+    <br><br>
+    <div id="result"></div>
+    <br><br>
+    <div class="option_div">
+      <button class="confirm_button" id="next" onclick="calculateScore()"> Next </button>
+    </div>
+  </body>
+</html>
