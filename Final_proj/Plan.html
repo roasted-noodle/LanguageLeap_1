@@ -141,8 +141,22 @@
     </div>
 
     <div class="button_grid">
-        <a href="Duol/Duol.html"><button>Confirm</button></a>
+        <button onclick="validateEmail()">Confirm</button>
     </div>
-    
+
+    <script>
+        function validateEmail() {
+            var email = document.getElementById("form_email").value;
+            var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!pattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            } else {
+                window.location.href = "Duol/Duol.html";
+            }
+        }
+    </script>
 </body>
+
 </html>
+
