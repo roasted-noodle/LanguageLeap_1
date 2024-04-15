@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - LanguageLeap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Kavoon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Quiz.css">
+    <style>
+      #next {
+          display: none;
+      }
+  </style>
+  <script>
+      function calculateScore() {
+        const correctAnswers = ["A", "D", "B", "B", "B"];
+      let score = 0;
+  
+      const answers = document.querySelectorAll('input[type="radio"]:checked');
+   
+      answers.forEach((answer, index) => {
+          if (answer.value === correctAnswers[index]) {
+              score++;
+          }
+      });
+  
+      document.getElementById("result").innerHTML = "Your score is: " + score + " out of 5";
+      document.getElementById("result").classList.add("result");
+      document.getElementById("next").style.display = "inline";
+  }
+
+  function nextpage(){
+    window.location.href = "../Good_job.html";
+  }
+  
+  </script>
+  </head>
+
+  <body>
+   
+
+    <div class="heading_container">
+      <a href="../Take_test.html"> Back</a>
+      <div class="heading_site">
+        <h1>LanguageLeap</h1>
+      </div>
+    </div>
+    </div>
+    
+
+    <div class="progress-container">
+      <progress value="70" max="100"></progress>
+  </div>
+
+    <br>
+    <div class="main_question">
+        <p> Spanish Quiz </p>
+    </div>
+
+    <div class="options_mcq">
+      <div class="option_div">
+        <button class="option_button"> 
+         <div>
+            <label for="q1">1. How do you say "hello" in Spanish?</label><br><br>
+            <input type="radio" id="q1a" name="q1" value="A"> Hola
+            <input type="radio" id="q1b" name="q1" value="B"> Adios
+            <input type="radio" id="q1c" name="q1" value="C"> Jabon
+            <input type="radio" id="q1d" name="q1" value="D"> Manos
+      </div></button>
+    </div>
+    <div class="options_mcq">
+      <div class="option_div">
+        <button class="option_button"> 
+         <div>
+            <label for="q2">2. How do you say "dog" in Spanish?</label><br><br>
+            <input type="radio" id="q2a" name="q2" value="A"> Gato
+            <input type="radio" id="q2b" name="q2" value="B"> Raton
+            <input type="radio" id="q2c" name="q2" value="C"> Carro
+            <input type="radio" id="q2d" name="q2" value="D"> Perro
+      </div></button>
+    </div>
+    <div class="options_mcq">
+      <div class="option_div">
+        <button class="option_button"> 
+         <div>
+            <label for="q3">3. How do you say "wash" in Spanish?</label><br><br>
+            <input type="radio" id="q3a" name="q3" value="A"> Pintar
+            <input type="radio" id="q3b" name="q3" value="B"> Lavar
+            <input type="radio" id="q3c" name="q3" value="C"> Recibir
+            <input type="radio" id="q3d" name="q3" value="D"> Mujer
+      </div></button>
+    </div>
+    <div class="options_mcq">
+      <div class="option_div">
+        <button class="option_button"> 
+         <div>
+            <label for="q4">4. How do you say "Miss" in Spanish?</label><br><br>
+            <input type="radio" id="q4a" name="q4" value="A"> Senor
+            <input type="radio" id="q4b" name="q4" value="B"> Senorito
+            <input type="radio" id="q4c" name="q4" value="C"> Senorita
+            <input type="radio" id="q4d" name="q4" value="D"> Cabeza
+      </div></button>
+    </div>
+    <div class="options_mcq">
+      <div class="option_div">
+        <button class="option_button"> 
+         <div>
+            <label for="q5">5. If you want to ask where the bathroom is; what is the correct phrase to use?</label><br><br>
+            <input type="radio" id="q5a" name="q5" value="A"> Adonde estamos?
+            <input type="radio" id="q5b" name="q5" value="B"> Adonde esta el bano?
+            <input type="radio" id="q5c" name="q5" value="C"> Podemos ir a la tienda?
+            <input type="radio" id="q5d" name="q5" value="D"> Y las llaves?
+      </div></button>
+    </div>
+    <div class="option_div">
+      <button class="confirm_button" onclick="calculateScore()"> Submit </button>
+    </div>
+    <br><br>
+    <div id="result"></div>
+    <br><br>
+    <div class="option_div">
+      <button class="confirm_button" id="next" onclick="nextpage()"> Next </button>
+    </div>
+  </body>
+</html>
