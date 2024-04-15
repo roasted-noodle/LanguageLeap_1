@@ -84,11 +84,19 @@ h3 {
     padding-right: 30px;
 }
 
-footer {
-    background-color: rgb(234, 161, 97);
+
+.deets{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.foot{
+
+    background-color: #f8d9bd;
     padding: 10px 0;
     text-align: center;
-    color: rgb(90, 45, 7)
+    color: #a6662c;
 }
 
 .footer-item {
@@ -99,13 +107,15 @@ footer {
 
 .body-item {
     display: inline-block;
-    height: 150px;
+    height: 160px;
     margin: 0 40px;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 10px;
     /* padding: 5px; */
     background-color: white;
     /* color: orangered; */
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 p {
@@ -128,24 +138,26 @@ hr {
 }
 
 .dropdown button {
-    background-color: #333;
-    color: white;
+    background-color: white;
+    color: #a6662c;
     padding: 10px 30px;
-    border: none;
+    border: 1px solid #a6662c;
+    border-radius: 10px;
     cursor: pointer;
     position: relative;
-    width: 1000px;
+    width: 700px;
     height: 50px;
-
+    font-family: nunito, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .dropdown-content {
-
-    width: 1000px;
-    height: 70px;
+    width: 700px;
+    height:fit-content;
     display: none;
     background-color: white;
-
+    border-radius: 10px;
     margin: 0;
     padding: 0;
 }
@@ -219,4 +231,41 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
     row-gap: 20px;
+}
+
+.heads{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+.success{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.body-item2{
+    display: inline-block;
+    height:max-content;
+    margin: 0 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.text_success{
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+}
+
+#services{
+    margin-bottom: 5%;
 }
